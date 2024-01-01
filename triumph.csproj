@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF2A3387-1A89-4BB4-A3DA-2C891B9B05B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>triumph</RootNamespace>
+    <AssemblyName>triumph</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="brak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="brak.Designer.cs">
+      <DependentUpon>brak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client.Designer.cs">
+      <DependentUpon>client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cotry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cotry.Designer.cs">
+      <DependentUpon>cotry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="osnovnoy_otpysk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="osnovnoy_otpysk.Designer.cs">
+      <DependentUpon>osnovnoy_otpysk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="osoba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="osoba.Designer.cs">
+      <DependentUpon>osoba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otchet.Designer.cs">
+      <DependentUpon>otchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otpyskposemein.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otpyskposemein.Designer.cs">
+      <DependentUpon>otpyskposemein.cs</DependentUpon>
+    </Compile>
+    <Compile Include="perevod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="perevod.Designer.cs">
+      <DependentUpon>perevod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pesiya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pesiya.Designer.cs">
+      <DependentUpon>pesiya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rastor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rastor.Designer.cs">
+      <DependentUpon>rastor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rebenok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rebenok.Designer.cs">
+      <DependentUpon>rebenok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rod.Designer.cs">
+      <DependentUpon>rod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tryd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tryd.Designer.cs">
+      <DependentUpon>tryd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workform.Designer.cs">
+      <DependentUpon>Workform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ychot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ychot.Designer.cs">
+      <DependentUpon>ychot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yslug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yslug.Designer.cs">
+      <DependentUpon>yslug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ysnovlen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ysnovlen.Designer.cs">
+      <DependentUpon>ysnovlen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yvoln.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yvoln.Designer.cs">
+      <DependentUpon>yvoln.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yxodzareb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yxodzareb.Designer.cs">
+      <DependentUpon>yxodzareb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zak.Designer.cs">
+      <DependentUpon>zak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zayavlenienawork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zayavlenienawork.Designer.cs">
+      <DependentUpon>zayavlenienawork.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="brak.resx">
+      <DependentUpon>brak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client.resx">
+      <DependentUpon>client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cotry.resx">
+      <DependentUpon>cotry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="osnovnoy_otpysk.resx">
+      <DependentUpon>osnovnoy_otpysk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="osoba.resx">
+      <DependentUpon>osoba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otchet.resx">
+      <DependentUpon>otchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otpyskposemein.resx">
+      <DependentUpon>otpyskposemein.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="perevod.resx">
+      <DependentUpon>perevod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pesiya.resx">
+      <DependentUpon>pesiya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rastor.resx">
+      <DependentUpon>rastor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rebenok.resx">
+      <DependentUpon>rebenok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rod.resx">
+      <DependentUpon>rod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tryd.resx">
+      <DependentUpon>tryd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workform.resx">
+      <DependentUpon>Workform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ychot.resx">
+      <DependentUpon>ychot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yslug.resx">
+      <DependentUpon>yslug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ysnovlen.resx">
+      <DependentUpon>ysnovlen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yvoln.resx">
+      <DependentUpon>yvoln.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yxodzareb.resx">
+      <DependentUpon>yxodzareb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zak.resx">
+      <DependentUpon>zak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zayavlenienawork.resx">
+      <DependentUpon>zayavlenienawork.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
